@@ -14,6 +14,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
             optionsBuilder.UseSqlServer(@"Server=ESRAORHAN;Database=Northwind;User Id=sa;Password=esra1905;");
         }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
         //public DbSet<Category> Categories { get; set; } //575. ders udemy
     }
 }
