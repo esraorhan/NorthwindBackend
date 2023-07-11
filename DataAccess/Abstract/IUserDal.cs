@@ -1,0 +1,14 @@
+﻿using Core.DataAccess;
+using Entities.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace DataAccess.Abstract
+{
+    public interface IUserDal :IEntityRepository<User>
+    {
+        List<OperationClaim> GetClaims(User user);
+        //join işlemi için yazdık. dataaccess userdal katmanında join işlemi için ilk adım
+    }
+}
